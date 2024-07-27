@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Request</title>
+  </head>
+  <body>
+    <div class="w-[40%] mx-auto my-8 space-y-6">
+      <section class="space-y-6">
+        <h4 class="text-center p-4 bg-blue-500 text-white">Poblem 2</h4>
+        <div class="flex flex-col gap-6">
+          <label for="">Enter new Item</label>
+          <div class="flex w-full gap-3">
+            <input
+              class="h-18 border rounded-lg p-3 w-full"
+              type="text"
+              placeholder="Item..."
+              name="newItem"
+              id="itemInput"
+            />
+            <button id="save" class="w-[100px] bg-blue-500 p-3 rounded-lg">
+              Save
+            </button>
+          </div>
+        </div>
+        <ul id="ItemResults"></ul>
+      </section>
+
+      <!-- Problem 3 -->
+      <form id="registerForm" class="space-y-6">
+        <h4 class="text-center p-4 bg-blue-500 text-white">Poblem 3</h4>
+        <!-- Name input -->
+        <div class="flex flex-col gap-6">
+          <label for="">Name</label>
+          <div class="flex w-full gap-3">
+            <input
+              class="h-18 border rounded-lg p-3 w-full"
+              type="text"
+              placeholder="Name..."
+              name="name"
+              id="name"
+            />
+          </div>
+        </div>
+
+        <!-- Email input -->
+        <div class="flex flex-col gap-6">
+          <label for="">Email</label>
+          <div class="flex w-full gap-3">
+            <input
+              class="h-18 border rounded-lg p-3 w-full"
+              type="email"
+              placeholder="Email..."
+              name="email"
+              id="email"
+            />
+          </div>
+        </div>
+        <!-- Password input -->
+        <div class="flex flex-col gap-6">
+          <label for="">Password</label>
+          <div class="flex w-full gap-3">
+            <input
+              class="h-18 border rounded-lg p-3 w-full"
+              type="password"
+              placeholder="password..."
+              name="password"
+              id="password"
+            />
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          id="submit"
+          class="w-full text-white bg-green-500 p-3 rounded-lg"
+        >
+          Submit
+        </button>
+      </form>
+
+      <!-- Problem 4 -->
+      <section class="space-y-6">
+        <h4 class="text-center p-4 bg-blue-500 text-white">Poblem 4</h4>
+        <div class="relative h-[300px] bg-gray-100">
+          <button
+            id="prev"
+            class="absolute z-10 left-0 top-[50%] bg-blue-500 text-[2rem] text-white p-3 w-[100px]"
+          >
+            &lt;
+          </button>
+          <div id="carousel"></div>
+          <button
+            id="next"
+            class="bg-blue-500 z-10 absolute right-0 top-[50%] text-[2rem] text-white p-3 w-[100px]"
+          >
+            &gt;
+          </button>
+        </div>
+      </section>
+    </div>
+    <script src="./assignment4.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
